@@ -1,0 +1,159 @@
+/* General body styling */
+body {
+    padding-top: 70px;
+    height: 100%; /* Add some space below the fixed navbar */
+  }
+  
+  /* Make the navbar background transparent, or you can use any color */
+  .navbar {
+    background-color: #ffffff; /* White background for a clean look */
+  }
+  
+  /* Hover effect for navbar items */
+  .nav-link:hover {
+    color: #007bff !important; /* Blue color on hover */
+  }
+  
+  /* Styling for navbar dropdown items */
+  .nav-item.dropdown .dropdown-menu {
+    background-color: #ffffff; /* Dropdown background color */
+    border: 1px solid #007bff; /* Blue border for the dropdown */
+  }
+  
+  /* Optional: Styling for the logo size (can be adjusted) */
+  .navbar-brand img {
+    width: 50px;
+    height: auto;
+  }
+  
+  /* Mobile Navbar Toggler (hamburger menu) */
+  .navbar-toggler {
+    border-color: #007bff; /* Toggler border color */
+  }
+  
+  /* Optional: Styling for active links */
+  .nav-link.active {
+    color: #007bff !important; /* Active link color */
+  }
+  
+  /* Additional styling for links when hovered in the navbar */
+  .navbar-nav .nav-link {
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+  }
+  /* Add animation on page load */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Apply fade-in animation */
+  img.img-fluid {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+
+footer.bg-dark {
+    padding-top: 5px;
+     padding-bottom: 5px; 
+    }
+
+   
+
+
+.social-icons a {
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0077b5; /* Facebook Blue */
+    transform: translateY(-5px);
+}
+
+.social-icons i {
+    font-size: 20px;
+}
+
+.social-icons h4 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.social-icons a:not(:last-child) {
+    margin-right: 20px; /* Space between icons */
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+}
+
+.contact-info li {
+    display: flex;
+    align-items: center; /* Aligns icon, label, and content vertically */
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 12px; /* Space between list items */
+}
+
+.contact-info i {
+    color: #0077b5; /* Icon color */
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 20px; /* Slightly larger icon for visibility */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-info i:hover {
+    transform: scale(1.2); /* Slight zoom effect on hover */
+    color: #ff5722; /* Change color on hover for interaction */
+}
+
+.contact-info h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333; /* Darker color for the labels */
+    margin-right: 10px; /* Space between label and content */
+}
+
+.contact-info li:last-child {
+    margin-bottom: 0; /* Remove margin from the last list item */
+}
+
+
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: 'Arial', sans-serif; /* You can change this to any font you prefer */
+}
+
+.brand-text {
+    font-size: 1.5rem; /* Adjust the size as needed */
+    font-weight: bold; /* Make it stand out */
+    margin-left: 10px; /* Adds space between the logo and text */
+    font-family: 'Roboto', sans-serif; /* You can replace this with any font of your choice */
+    background: linear-gradient(45deg, #9b59b6, #f39c12); /* Gradient from purple to gold */
+    -webkit-background-clip: text;
+    color: transparent; /* Makes sure the gradient shows on the text */
+}
+
+
